@@ -1,0 +1,70 @@
+/* Menata Body */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/login.jpg'); /* Gantilah dengan URL gambar background */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Memastikan body mengisi seluruh layar */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container untuk login dengan background blur */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Set background putih dengan transparansi */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+    -webkit-backdrop-filter: blur(10px); /* Untuk mendukung browser berbasis WebKit (Safari) */
+}
+
+/* Styling elemen-elemen lain */
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
