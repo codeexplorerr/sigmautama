@@ -29,20 +29,48 @@
     </nav>
 
 
-    <div class="background">
-        <!-- Masukkan gambar yang berdampingan -->
-        <img src="img/marine2.jpg" alt="Gambar 1">
-        <img src="img/jasaapk.jpg" alt="Gambar 2">
-        <img src="img/decorativee.jpg" alt="Gambar 3">
-        <img src="img/Special-Chemical-Products-for-Food.jpg" alt="Gambar 4">
-    
-        <!-- Overlay putih transparan -->
-        <div class="overlay"></div>
-    
-        <!-- Konten teks -->
-        <div class="text-content">
-          <h1>BROSUR PRODUK</h1>
-          <!-- <p>PT. Sigma Utama → Produk Marine & Protective Coatings</p> -->
+    <div class="img-slider">
+        <div class="slide active">
+          <img src="img/marine2.jpg">
+          <div class="info">
+            <h2>Marine</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolor facilis laudantium neque aliquid </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/industrial.jpg">
+          <div class="info">
+            <h2>Industrial</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolor facilis laudantium neque aliquid molestias impedit numquam blanditiis, nesciunt accusantium, consequuntur et cumque. Esse laudantium in eos magnam inventore consectetur?</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/decorativee.jpg">
+          <div class="info">
+            <h2>Decorative</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolor facilis laudantium neque aliquid molestias impedit numquam blanditiis, nesciunt accusantium, consequuntur et cumque. Esse laudantium in eos magnam inventore consectetur?</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/decor.jpg">
+          <div class="info">
+            <h2>Jasa Aplikasi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolor facilis laudantium neque aliquid molestias impedit numquam blanditiis, nesciunt accusantium, consequuntur et cumque. Esse laudantium in eos magnam inventore consectetur?</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/Special-Chemical-Products-for-Food.jpg">
+          <div class="info">
+            <h2>Special Chemicals</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolor facilis laudantium neque aliquid molestias impedit numquam blanditiis, nesciunt accusantium, consequuntur et cumque. Esse laudantium in eos magnam inventore consectetur?</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
         </div>
       </div>
 
@@ -87,13 +115,13 @@
               <a href="special_product.html">Selengkapnya →</a>
           </div>
       </div>
-      <div class="card">
+      <!-- <div class="card">
           <img src="img/fertilizerr.jpg" alt="Fertilizer Colorant">
           <div class="card-content">
               <h3>Fertilizer Colorant</h3>
               <a href="#">Selengkapnya →</a>
           </div>
-      </div>
+      </div> -->
   </div>
 
     <section id="contact">
@@ -168,5 +196,60 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
       <script src="script.js"></script>
+
+      <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Manual
+        var manualNav = function(manual){
+          slides.forEach((slide) =>{
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i)=>{
+          btn.addEventListener("click", ()=> {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // autoplay
+        var repeat = function(activeClass){
+          document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+              slides[i].classList.add('active');
+              btns[i].classList.add('active');
+              i++;
+    
+              if(slides.length == i){
+                i = 0;
+              }
+              if(i >= slide.length){
+                return;
+              }
+              repeater();
+            }, 10000);
+          }
+          repeater();
+        }
+        repeat();
+      </script>
 </body>
 </html>
