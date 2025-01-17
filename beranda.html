@@ -6,6 +6,8 @@
     <title>PT. Sigma Utama</title>
     <link rel="stylesheet" href="beranda.css">
     <link rel="shortcut icon" href="img/iconsigma-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,6 +32,12 @@
 
 <div class="container">
   <div class="slider">
+    <div class="slides" style="--img: url('img/specialchemi.jpg')">
+      <div class="content">
+        <h2>Special Chemical</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod minus magnam vero laboriosam quaerat!</p>
+      </div>
+    </div>
     <div class="slides" style="--img: url('img/marine2.jpg')">
       <div class="content">
         <h2>Marine</h2>
@@ -50,13 +58,7 @@
     </div>
     <div class="slides" style="--img: url('img/jasaapk.jpg')">
       <div class="content">
-        <h2>Jasa Aplikasi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod minus magnam vero laboriosam quaerat!</p>
-      </div>
-    </div>
-    <div class="slides" style="--img: url('img/specialchemi.jpg')">
-      <div class="content">
-        <h2>Special Chemicals</h2>
+        <h2>Jasa Aplikasi & Pemeliharaan</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod minus magnam vero laboriosam quaerat!</p>
       </div>
     </div>
@@ -73,53 +75,67 @@
   </div>
 </div>
 
-<div class="grid-container">
-  <div class="card">
-      <img src="img/The Busiest Cargo Ports in Europe.jpeg" alt="Marine & Protective Coatings">
-      <div class="card-content">
-          <h3>Marine & Protective Coatings</h3>
-          <a href="marine.html">Selengkapnya →</a>
-      </div>
+<section class="judul-grid">
+  <h2>Detail Brosur</h2>
+</section>
+
+<div class="badan">
+  <div class="containerz swiper">
+    <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="marine.html" class="card-link">
+            <img src="img/maaarineee.jpg" class="card-image" alt="" />
+            <p class="badge designer">Marine</p>
+            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <button class="card-button material-symbols-outlined">arrow_forward</button></a
+          >
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="industrial.html" class="card-link">
+            <img src="img/industri1.jpeg" class="card-image" alt="" />
+            <p class="badge developer">Industrial</p>
+            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <button class="card-button material-symbols-outlined">arrow_forward</button></a
+          >
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="decorative.html" class="card-link">
+            <img src="img/decorativee.jpg" class="card-image" alt="" />
+            <p class="badge marketer">Decorative</p>
+            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <button class="card-button material-symbols-outlined">arrow_forward</button></a
+          >
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="jasa_aplikasi.html" class="card-link">
+            <img src="img/jasaapk.jpg" class="card-image" alt="" />
+            <p class="badge gamer">Jasa Aplikasi</p>
+            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <button class="card-button material-symbols-outlined">arrow_forward</button></a
+          >
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="special_product.html" class="card-link">
+            <img src="img/specialchemi.jpg" class="card-image" alt="" />
+            <p class="badge editor">Special Chemicals</p>
+            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h2>
+            <button class="card-button material-symbols-outlined">arrow_forward</button></a
+          >
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
   </div>
-  <div class="card">
-      <img src="img/industri.webp" alt="Industrial Coatings">
-      <div class="card-content">
-          <h3>Industrial Coatings</h3>
-          <a href="industrial.html">Selengkapnya →</a>
-      </div>
-  </div>
-  <div class="card">
-      <img src="img/decorativee.jpg" alt="Decorative Paint">
-      <div class="card-content">
-          <h3>Decorative Paint</h3>
-          <a href="decorative.html">Selengkapnya →</a>
-      </div>
-  </div>
-  <div class="card">
-      <img src="img/jasaapk.jpg" alt="Jasa Aplikasi & Pemeliharaan">
-      <div class="card-content">
-          <h3>Jasa Aplikasi & Pemeliharaan</h3>
-          <a href="jasa_aplikasi.html">Selengkapnya →</a>
-      </div>
-  </div>
-  <div class="card">
-      <img src="img/Special-Chemical-Products-for-Food.jpg" alt="Special Purpose Chemical Products">
-      <div class="card-content">
-          <h3>Special Purpose Chemical Products</h3>
-          <a href="special_product.html">Selengkapnya →</a>
-      </div>
-  </div>
-  <!-- <div class="card">
-      <img src="img/fertilizerr.jpg" alt="Fertilizer Colorant">
-      <div class="card-content">
-          <h3>Fertilizer Colorant</h3>
-          <a href="#">Selengkapnya →</a>
-      </div>
-  </div> -->
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
     <section id="contact">
-        <!-- Kontak -->
         <div class="section-contact">
             <h1>Contact Form</h1>
           </div>
