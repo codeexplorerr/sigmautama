@@ -285,7 +285,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(#ECEFFE #CED6FB);
 }
 
