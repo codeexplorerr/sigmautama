@@ -9,8 +9,9 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* Pastikan tinggi halaman penuh */
-  background-image: url("img/industre.jpeg"); /* Ganti dengan URL gambar Anda */
+  height: 120vh; /* Pastikan tinggi halaman penuh */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url('img/industre.jpeg') center/cover no-repeat; /* Ganti dengan URL gambar Anda */
   background-position: top; /* Mengatur posisi di atas */
   background-size: cover; /* Memastikan gambar memenuhi area */
   background-repeat: no-repeat;
@@ -88,6 +89,7 @@ nav ul li a:hover {
   margin: 0;
   font-size: 5vw;
   font-family: "Montserrat";
+  font-weight: 500;
   color: white;
 }
 
