@@ -397,6 +397,23 @@ body{
   }
 }
 
+@media screen and (max-width: 550px){
+  .judul-grid{
+    margin-bottom: 50px;
+  }
+  .judul-grid h2{
+    font-size: large;
+  }
+  .badan{
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .judul-grid{
+    margin-bottom: -5px;
+  }
+}
 /* Akhir Card */
 
 :root{
