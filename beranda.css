@@ -86,7 +86,7 @@ body{
   /* margin-bottom: 50px; */
   overflow: hidden;
   display: flex;
-  height: 100vh;
+  height: 800px;
   justify-content: center;
   align-items: center;
   padding: 80px 0; /* Tambahkan padding jika perlu */
