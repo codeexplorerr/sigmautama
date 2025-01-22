@@ -9,12 +9,11 @@
 body {
   margin: 0;
   padding: 0;
-  height: 120vh; /* Pastikan tinggi halaman penuh */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url('img/specialchemi.jpg') center/cover no-repeat; /* Ganti dengan URL gambar Anda */
+  height: 100vh; /* Pastikan tinggi halaman penuh */
+  background-image: url('img/specialchemi.jpg'); /* Ganti dengan URL gambar Anda */
   background-position: top; /* Mengatur posisi di atas */
   background-size: cover; /* Memastikan gambar memenuhi area */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 nav {
   background-color: white;
