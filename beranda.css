@@ -83,14 +83,14 @@ body{
 .container {
   position: relative;
   width: 100%;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   overflow: hidden;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 80px 0; /* Tambahkan padding jika perlu */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .slider{
@@ -285,7 +285,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 500px;
   background: linear-gradient(#ECEFFE #CED6FB);
 }
 
@@ -396,6 +396,7 @@ body{
       display: none;
   }
 }
+
 /* Akhir Card */
 
 :root{
