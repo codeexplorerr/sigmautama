@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh; /* Pastikan tinggi halaman penuh */
-  background-image: url('img/specialchemi.jpg'); /* Ganti dengan URL gambar Anda */
+  background-image: url('img/kimiaa.jpg'); /* Ganti dengan URL gambar Anda */
   background-position: top; /* Mengatur posisi di atas */
   background-size: cover; /* Memastikan gambar memenuhi area */
   background-repeat: no-repeat; 
@@ -103,7 +103,7 @@ nav ul li a:hover {
 
 .brochure {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: white;
   padding: 20px;
@@ -137,10 +137,10 @@ nav ul li a:hover {
   width: 100%;
   max-width: 600px;
   margin: auto;
+  margin-left: -0.5px;
   overflow: hidden;
   border-radius: 10px;
 }
-
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -172,6 +172,11 @@ nav ul li a:hover {
 
 .navigation button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (min-width: 920px) {
+  .slider{
+    height: 30vw;
+  }
 }
 
 /* Responsiveness */

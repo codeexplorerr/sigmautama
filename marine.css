@@ -103,7 +103,7 @@ nav ul li a:hover {
 
 .brochure {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: white;
   padding: 20px;
@@ -137,6 +137,7 @@ nav ul li a:hover {
   width: 100%;
   max-width: 600px;
   margin: auto;
+  margin-left: -0.5px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -172,6 +173,12 @@ nav ul li a:hover {
 
 .navigation button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 920px) {
+  .slider{
+    height: 30vw;
+  }
 }
 
 /* Responsiveness */
