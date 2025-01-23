@@ -140,7 +140,6 @@ nav ul li a:hover {
   margin-left: -0.5px;
   overflow: hidden;
   border-radius: 10px;
-  height: 30vw;
 }
 
 .slides {
@@ -175,6 +174,7 @@ nav ul li a:hover {
 .navigation button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 @media screen and (min-width: 920px) {
   .slider{
     height: 30vw;
