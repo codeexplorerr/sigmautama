@@ -230,7 +230,7 @@ body{
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 10px;
-  height: 50vh;
+  height: 300px;
 }
 
 .card-list .card-link .badge{
@@ -309,7 +309,7 @@ body{
     margin-bottom: 100px;
   }
   .card-list .card-link .card-image{
-    height: 350px;
+    height: 330px;
   }
   .card-wrapper{
       margin: 0 10px 25px;
@@ -328,6 +328,9 @@ body{
   }
   .badan{
     margin-bottom: 100px;
+  }
+  .card-list .card-link .card-image{
+    height: 330px;
   }
 }
 
