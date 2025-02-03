@@ -320,6 +320,9 @@ body{
 }
 
 @media screen and (max-width: 550px){
+  .slide{
+    height: 380px;
+  }
   .judul-grid{
     margin-bottom: 50px;
   }
