@@ -302,6 +302,15 @@ body{
 }
 
 @media screen and (max-width: 768px){
+  .judul-grid h2{
+    margin-bottom: 100px;
+  }
+  .badan{
+    margin-bottom: 100px;
+  }
+  .card-list .card-link .card-image{
+    height: 350px;
+  }
   .card-wrapper{
       margin: 0 10px 25px;
   }
