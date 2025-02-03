@@ -10,9 +10,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     // Validasi login
     if (password === correctPassword) {
-        // Jika password benar, simpan nama pengguna yang login
-        addLoggedUser(username);
-        // Bersihkan pesan kesalahan
+        // Jika password benar, simpan nama pengguna yang login\        addLoggedUser(username);
+        // Bersihkan pesan kesalahan 
         document.getElementById("error-message").innerText = "";
         
         // Redirect ke halaman beranda.html setelah login berhasil
@@ -22,8 +21,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         document.getElementById("error-message").innerText = "Username atau password salah!";
     }
 });
-
-// Fungsi untuk menambahkan pengguna yang login ke daftar
+ 
+// Fungsi untuk menambahkan pengguna yang login ke daftar masukkan
 function addLoggedUser(username) {
     let users = localStorage.getItem("loggedUsers");
     users = users ? JSON.parse(users) : [];
