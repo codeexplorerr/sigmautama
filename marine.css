@@ -196,6 +196,17 @@ color: #fff;
   }
 }
 
+@media (max-width: 400px){
+  .badans{
+    height: 50vh;
+    margin-bottom: 1100px;
+  }
+  .slider-wrapper{
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
 
 footer{
   position: relative;
