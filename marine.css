@@ -159,37 +159,6 @@ color: #fff;
 
 /* Media Queries untuk responsivitas */
 
-@media (max-width: 400px){
-  .badans{
-
-  }
-}
-
-@media (max-width: 950px){
-  .badans{
-    height: 70vh;
-  }
-}
-
-@media (max-width: 550px){
-.slider-wrapper{
-  margin-top: 1000px;
-}
-}
-
-
-@media (max-width: 855px){
-  .badans{
-    height: 120vh;
-  }
-  .slider-wrapper{
-    margin-top: 170px;
-  }
-  .slide-container{
-    margin-bottom: 00px;
-  }
-}
-
 
 @media (max-width: 770px) {
   .badans{
@@ -226,7 +195,6 @@ color: #fff;
       max-width: 300px;
   }
 }
-
 
 
 footer{
