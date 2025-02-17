@@ -15,7 +15,7 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     // Format pesan WhatsApp
     let whatsappMessage = `Halo, saya *${name}*
     📧 Email: ${email}%0A
-    📱 Subject: ${subject}%0A%0A
+    🧾 Subject: ${subject}%0A%0A
     📝 *Pesan:* %0A${message}%0A%0A
     Terima kasih!`;
 
