@@ -79,10 +79,11 @@ nav ul li a:hover {
 
 .judul-grid h2{
   text-align: center;
-  font-size: 3vw;
-  margin-top: 50px;
+  font-size: 25px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
+
 
 .badans {
   font-family: 'Poppins', sans-serif;
@@ -99,7 +100,7 @@ nav ul li a:hover {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .box {
   width: 210px;
