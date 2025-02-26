@@ -134,13 +134,19 @@ nav ul li a:hover {
       align-items: center;
   }
   .judul-grid h2{
-    font-size: small;
+    font-size: medium;
   }
 }
 
 @media (max-width: 768px){
   .container{
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+
+  .judul-grid h2{
+    /* visibility: hidden; */
+    margin-top: 100px;
+    z-index: 1;
   }
 }
 

@@ -31,20 +31,18 @@
     <section class="judul-grid">
         <h2>Jasa Aplikasi</h2>
       </section>
-
-
-
-
-<div class="badans">
-    <div class="container">
+      
+      
+      
+      <div class="badans">
+      <div class="container">
         <div class="box">
             <img src="brosur/Tower Coating/Tower Coating-1.jpg" alt="Gambar">
-            <p>Tower Coatings</p>
-            <a href="filepdf/Marine Coating.pdf">Download File</a>
+            <p>Tower Coating</p>
+            <a href="filepdf/Tower Coating.pdf">Download File</a>
         </div>
-    </div>
-</div>
-
+      </div>
+      </div>
 
     <footer>
         <div class="waves">
@@ -77,39 +75,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 
-    <script>
-      function nextSlide(sliderId) {
-          const slider = document.getElementById(sliderId);
-          let index = parseInt(slider.dataset.index || "0");
-          const totalSlides = slider.children.length;
-          index = (index + 1) % totalSlides;
-          slider.dataset.index = index;
-          updateSlide(slider, index);
-      }
-      
-      function prevSlide(sliderId) {
-          const slider = document.getElementById(sliderId);
-          let index = parseInt(slider.dataset.index || "0");
-          const totalSlides = slider.children.length;
-          index = (index - 1 + totalSlides) % totalSlides;
-          slider.dataset.index = index;
-          updateSlide(slider, index);
-      }
-      
-      function updateSlide(slider, index) {
-          slider.style.transform = `translateX(-${index * 100}%)`;
-      }
-      
-      function downloadFile(filename) {
-          const link = document.createElement('a');
-          link.href = 'path_to_your_file/' + filename; // Ganti dengan path file yang sesuai
-          link.download = filename;
-          link.click();
-      }
-      
-      // Auto-slide every 3 seconds
-      setInterval(() => nextSlide('slider1'), 3000);
-      setInterval(() => nextSlide('slider2'), 3000);
-  </script>
 </body>
 </html>

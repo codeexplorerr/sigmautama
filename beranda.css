@@ -240,12 +240,13 @@ body{
 
 @media (max-width: 768px){
   .container{
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .judul-grid h2{
     /* visibility: hidden; */
-    margin-top: 0px;
+    margin-top: 80px;
+    z-index: 1;
   }
 }
 

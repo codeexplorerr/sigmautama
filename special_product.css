@@ -77,13 +77,13 @@ nav ul li a:hover {
   }
 }
 
+
 .judul-grid h2{
   text-align: center;
   font-size: 25px;
   margin-top: 25px;
   margin-bottom: 10px;
 }
-
 
 .badans {
   font-family: 'Poppins', sans-serif;
@@ -133,14 +133,20 @@ nav ul li a:hover {
       flex-direction: column;
       align-items: center;
   }
+  .judul-grid h2{
+    font-size: medium;
+  }
 }
 
 @media (max-width: 768px){
   .container{
-    margin-top: 100px;
+    margin-top: 20px;
   }
+
   .judul-grid h2{
-    margin-top: 0;
+    /* visibility: hidden; */
+    margin-top: 100px;
+    z-index: 1;
   }
 }
 

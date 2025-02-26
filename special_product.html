@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT. Sigma Utama</title>
-    <link rel="stylesheet" href="special_product.css">
+    <link rel="stylesheet" href="marine.css">
     <link rel="shortcut icon" href="img/iconsigma-removebg-preview.png" type="image/x-icon">
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
@@ -31,17 +31,18 @@
     <section class="judul-grid">
         <h2>Special Chemicals</h2>
       </section>
-
-<div class="badans">
-    <div class="container">
+      
+      
+      
+      <div class="badans">
+      <div class="container">
         <div class="box">
             <img src="brosur/Intumescent Coating/Intumescent Coating-1.jpg" alt="Gambar">
-            <p>Intumescent Coatings</p>
-            <a href="filepdf/Marine Coating.pdf">Download File</a>
+            <p>Intumescent Coating</p>
+            <a href="filepdf/">Download File</a>
         </div>
-    </div>
-</div>
-
+      </div>
+      </div>
 
     <footer>
         <div class="waves">
@@ -74,39 +75,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 
-    <script>
-      function nextSlide(sliderId) {
-          const slider = document.getElementById(sliderId);
-          let index = parseInt(slider.dataset.index || "0");
-          const totalSlides = slider.children.length;
-          index = (index + 1) % totalSlides;
-          slider.dataset.index = index;
-          updateSlide(slider, index);
-      }
-      
-      function prevSlide(sliderId) {
-          const slider = document.getElementById(sliderId);
-          let index = parseInt(slider.dataset.index || "0");
-          const totalSlides = slider.children.length;
-          index = (index - 1 + totalSlides) % totalSlides;
-          slider.dataset.index = index;
-          updateSlide(slider, index);
-      }
-      
-      function updateSlide(slider, index) {
-          slider.style.transform = `translateX(-${index * 100}%)`;
-      }
-      
-      function downloadFile(filename) {
-          const link = document.createElement('a');
-          link.href = 'path_to_your_file/' + filename; // Ganti dengan path file yang sesuai
-          link.download = filename;
-          link.click();
-      }
-      
-      // Auto-slide every 3 seconds
-      setInterval(() => nextSlide('slider1'), 3000);
-      setInterval(() => nextSlide('slider2'), 3000);
-  </script>
 </body>
 </html>
