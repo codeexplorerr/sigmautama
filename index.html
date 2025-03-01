@@ -1,27 +1,196 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT. Sigma Utama</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/iconsigma-removebg-preview.png" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="login-container">
-      <h2>Selamat Datang</h2>
-      <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="shortcut icon" href="img/iconsigma-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-
-        <button type="submit">Masuk</button>
-      </form>
-      <p id="error-message" class="error-message"></p>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="img">
+        <img src="img/removelogo.png" alt="sigmautama">
     </div>
+    <div class="menu-icon" id="menu-icon">
+        <i class="ph ph-list"></i>
+    </div>
+    <ul id="menu-list" class="hidden">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog.html">Katalog Warna</a></li>
+        <li><a href="marine.html">Marine</a></li>
+        <li><a href="protective.html">Protective</a></li>
+        <li><a href="industrial.html">Industrial</a></li>
+        <li><a href="decorative.html">Decorative</a></li>
+        <li><a href="special-coat.html">Special Coatings</a></li>
+        <li><a href="specialty.html">Specialty Chemicals</a></li>
+        <li><a href="jasa_aplikasi.html">Jasa Aplikasi</a></li>
+    </ul>
+</nav>
+<!-- Navigation end bar -->
 
-    <script src="login.js"></script>
-  </body>
+<!-- Konten Beranda -->
+
+
+<!-- Akhir Konten Beranda -->
+
+<section class="judul-grid">
+  <h2>Brosur Produk</h2>
+</section>
+
+
+
+<div class="badans">
+<div class="container">
+  <div class="box">
+      <img src="brosur/Kartu Warna MOPC (Warna)/Kartu Warna MOPC (Warna)-1.jpg" alt="Gambar">
+      <p>Katalog Warna</p>
+      <a href="katalog.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="brosur/Marine Coating/Marine Coating-1.jpg" alt="Gambar">
+      <p>Marine Coatings</p>
+      <a href="marine.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="brosur/Brosur High Temperature Application Paint/Brosur High Temperaturees Application Paint-1.jpg" alt="Gambar">
+      <p>Protective Coatings</p>
+      <a href="protective.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="brosur/Floor Coating Series/Floor Coating Series-1.jpg" alt="Gambar">
+      <p>Industrial Coatings</p>
+      <a href="industrial.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="brosur/Decorative Paint/Decorative Paint-1.jpg" alt="Gambar">
+      <p>Decorative Paint</p>
+      <a href="decorative.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="brosur/Intumescent Coating/Intumescent Coating-1.jpg" alt="Gambar">
+      <p>Special Purpose</p>
+      <a href="special-coat.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="img/ferti1 (1).jpeg" alt="Gambar">
+      <p>Specialty Chemicals</p>
+      <a href="specialty.html">Lihat Selengkapnya</a>
+  </div>
+  <div class="box">
+      <img src="img/jasaapkl (1).jpeg" alt="Gambar">
+      <p>Jasa Aplikasi</p>
+      <a href="jasa_aplikasi.html">Lihat Selengkapnya</a>
+  </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
+<!-- Contact -->
+<div class="bawah">
+  <section class="contact-form">
+   <h4 class="sectionHeader">contact us</h4>
+   <h1 class="heading">Get In Touch!</h1>
+   <!-- <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos
+       inventore omnis aliquid rerum alias molestias.</p> -->
+   
+   <div class="contactForm">
+       <form action="#">
+        <h1 class="sub-heading">Butuh Bantuan?</h1>
+        <p class="para para2">Contact us for a quote , help to join the them.</p>
+        <input type="text" id="name" class="input" placeholder="your name">
+        <input type="text" id="email" class="input" placeholder="your email">
+        <input type="text" id="subject" class="input" placeholder="your Subject">
+        <textarea class="input" id="message" cols="30" rows="5" placeholder="Your message..."></textarea>
+        <input type="submit" id="submitBtn" class="input submit" value="Kirim Via Whatsapp">
+       </form>
+
+       <div class="map-container">
+           <!-- <div class="mapBg"></div> -->
+           <div class="map">
+             <iframe style="border: 1px solid black; border-radius: 10px; margin-left: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.268148786932!2d106.8654934749927!3d-6.4876888935043135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1072a75d3a7%3A0x5f930349159ea72c!2sPT%20Sigma%20Utama%20(official)!5e0!3m2!1sid!2sid!4v1737511659856!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+       </div>
+   </div>
+
+   <div class="contactMethod">
+       <div class="method">
+           <i class="fa-solid fa-location-dot contactIcon"></i>
+           <article class="text">
+               <h1 class="sub-heading">Alamat</h1>
+               <p class="para">Jl.Lanbau No.1, Kp.Gudang, Kel.Karang<br> Asem Barat - Kec.Citeureup. Kab.Bogor - <br>Jawa Barat (16810)</p>
+           </article>
+       </div>
+
+       <div class="method">
+           <i class="fa-solid fa-envelope contactIcon"></i>
+           <article class="text">
+               <h1 class="sub-heading">Email</h1>
+               <p class="para">Email: marketing@sigmautama.com <br>pr@sigmautama.com</p>
+           </article>
+       </div>
+
+       <div class="method">
+           <i class="fa-solid fa-phone contactIcon"></i>
+           <article class="text">
+               <h1 class="sub-heading">Telephone</h1>
+               <p class="para">0218756310, 0218756311, 0218753043</p>
+           </article>
+       </div>
+   </div>
+  </section>
+ </div>
+
+  <!-- Contact End -->
+
+  <!-- Footer -->
+    <footer>
+      <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+      </div>
+
+    <ul class="social-icon">
+      <li><a href="https://youtube.com/@sigmautama1932?si=Gg6Rc8PI_Hi1uMSI"><ion-icon name="logo-youtube"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/sigmautama?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="https://www.tiktok.com/@sigmautama?is_from_webapp=1&sender_device=pc"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+      <li><a href="https://www.linkedin.com/in/sigma-utama"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog.html">Katalog Warna</a></li>
+        <li><a href="marine.html">Marine</a></li>
+        <li><a href="protective.html">Protective</a></li>
+        <li><a href="industrial.html">Industrial</a></li>
+        <li><a href="decorative.html">Decorative</a></li>
+        <li><a href="special-coat.html">Special Purpose</a></li>
+        <li><a href="specialty.html">Specialty Chemicals</a></li>
+        <li><a href="jasa_aplikasi.html">Jasa Aplikasi</a></li>
+    </ul>
+
+    <p>PT. Sigma Utama</p>
+  </footer>
+  <!-- Footer End -->
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script src="script.js"></script>
+
+      <!-- <script src="slider.js"></script> -->
+      <script src="app.js"></script>
+      <script src="pesan.js"></script>
+</body>
 </html>

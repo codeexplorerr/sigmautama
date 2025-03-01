@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-* {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900&display=swap");
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background: #f3f4f6;
-  height: 100vh; 
-}
+
 nav {
   background-color: white;
   display: flex;
@@ -36,6 +31,7 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
   color: #191919;
   font-weight: 600;
+  font-size: 13px;
   padding: 8px 0;
   transition: all;
   transition-duration: 300ms;
@@ -77,13 +73,121 @@ nav ul li a:hover {
   }
 }
 
+body{
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: rgb(241, 239, 239);
+}
+
+.slide{
+  width: 1300px;
+  max-width: 100vw;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide .lis{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slide .lis img{
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .tombol{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slide .tombol button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slide .dot{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slide .dot li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slide .dot li.aktif{
+  width: 30px;
+}
+.slide .itam {
+  position: relative; /* Agar teks berada di atas gambar */
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 50px; /* Letak teks (bisa diubah ke 'top', 'center', dll.) */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.5); Latar belakang teks semi transparan */
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 80%; /* Sesuaikan dengan kebutuhan */
+}
+
+.text-overlay h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+  margin: 5px 0 0;
+}
+@media screen and (max-width: 768px){
+  .slider{
+      height: 400px;
+  }
+  .slide .tombol button{
+    visibility: hidden;
+  }
+}
 
 .judul-grid h2{
   text-align: center;
   font-size: 25px;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
+
 
 .badans {
   font-family: 'Poppins', sans-serif;
@@ -91,7 +195,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   /* height: 60vh; */
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   margin: 0;
 }
 .container {
@@ -133,9 +237,6 @@ nav ul li a:hover {
       flex-direction: column;
       align-items: center;
   }
-  .judul-grid h2{
-    font-size: medium;
-  }
 }
 
 @media (max-width: 768px){
@@ -145,12 +246,173 @@ nav ul li a:hover {
 
   .judul-grid h2{
     /* visibility: hidden; */
-    margin-top: 100px;
+    margin-top: 80px;
     z-index: 1;
   }
 }
 
+:root{
+  --bodyBg:#303841;
+  --formBg:#343F4B;
+  --textColor:#fff;
+  --primaryColor:#0076A3;
+  --paraColor:#5e6c79;
+  --paraColor:#74828f;
 
+}
+
+.bawah{
+  color: var(--textColor);
+  background: rgb(241, 239, 239);
+  padding-bottom: 5em;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.sectionHeader{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--formBg);
+  margin-bottom: .5em;
+}
+
+.heading,.sub-heading{
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+.heading{
+  font-size: 2.5em;
+  color: var(--formBg);
+}
+
+.sub-heading{
+  text-align: left;
+  color: var(--formBg);
+}
+
+.contactForm{
+  display: grid;
+  gap: 3em;
+}
+
+form{
+  width: 100%;
+  margin-top: 3em;
+}
+
+.para{
+  color: var(--formBg);
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.para2{
+  text-align: left;
+}
+
+.input{
+  width: 95%;
+  max-width: 700px;
+  border: none;
+  font-size: .9rem;
+  padding: 1em;
+  outline: none;
+  background-color: var(--textColor);
+  color: var(--paraColor);
+  border-radius: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  margin-bottom: 1em;
+
+}
+
+.input:focus{
+  border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+  text-transform: capitalize;
+}
+
+.submit{
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--textColor);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.map-container{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.mapBg{
+  position: absolute;
+  background-color: var(--primaryColor);
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.map{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.contactMethod{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.method{
+  display: flex;
+  align-items: center;
+}
+
+.contactIcon{
+  font-size: 2rem;
+  color: var(--primaryColor);
+  width: 70px;
+}
+
+@media screen and (min-width:800px) {
+  section{
+      max-width: 1100px;
+  }
+  .contactForm{
+      grid-template-columns: 1fr 1fr;
+  }   
+
+  .contactMethod{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
 
 footer{
   position: relative;
@@ -192,7 +454,7 @@ footer .social-icon li a:hover{
 }
 
 footer .menu li a{
-  font-size: 1.2em;
+  font-size: 15px;
   color: #fff;
   margin: 0 10px;
   display: inline-block;

@@ -31,6 +31,7 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
   color: #191919;
   font-weight: 600;
+  font-size: 13px;
   padding: 8px 0;
   transition: all;
   transition-duration: 300ms;
@@ -453,7 +454,7 @@ footer .social-icon li a:hover{
 }
 
 footer .menu li a{
-  font-size: 1.2em;
+  font-size: 15px;
   color: #fff;
   margin: 0 10px;
   display: inline-block;
