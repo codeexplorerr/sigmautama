@@ -194,8 +194,21 @@
       <script src="pesan.js"></script>
 
       <script>
-        fetch('http://localhost:3000/api/track', { method: 'POST' });
-        </script>
+        (function() {
+            fetch("https://0c64-180-252-162-144.ngrok-free.app/api/track", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    page: window.location.href,
+                    referrer: document.referrer
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log("Tracking success:", data))
+            .catch(error => console.error("Tracking error:", error));
+        })();
+    </script>
+    
         
 
 
