@@ -193,20 +193,16 @@
       <script src="pesan.js"></script>
 
       <script>
-        (function() {
-            fetch("https://0c64-180-252-162-144.ngrok-free.app/api/track", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    page: window.location.href,
-                    referrer: document.referrer
-                })
-            })
+        fetch('https://realtimesigma.vercel.app//visit', { method: 'POST' })
             .then(response => response.json())
-            .then(data => console.log("Tracking success:", data))
-            .catch(error => console.error("Tracking error:", error));
-        })();
-    </script>
+            .then(data => console.log('Visitor recorded:', data))
+            .catch(error => console.error('Error:', error));
+        </script>
+        
+      
+      
+    
+    
     
         
 
